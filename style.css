@@ -11,14 +11,15 @@ html * {
 .ma-burger {
   display: block;
   width: 20px;
-  height: 0px;
-  border-top: 2px solid red;
+  height: 20px;
+  border-top: 2px solid #157E9F;
+  cursor: pointer;
 }
 
 .ma-burger::before {
   content: '';
   width: 20px;
-  border-top: 2px solid red;
+  border-top: 2px solid #157E9F;
   display: block;
   margin-top: 5px;
 }
@@ -26,7 +27,7 @@ html * {
 .ma-burger::after {
   content: '';
   width: 20px;
-  border-top: 2px solid red;
+  border-top: 2px solid #157E9F;
   display: block;
   margin-top: 5px;
 }
@@ -74,8 +75,26 @@ html * {
 
 @media only screen and (max-width: 1509px) {
   .ma-header {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1409px) {
+  .ma-header {
     font-size: 14px;
   }
+}
+
+.ma-header_col-phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .ma-header__socials {

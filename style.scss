@@ -11,20 +11,21 @@ html * {
 .ma-burger{
     display: block;
     width: 20px;
-    height: 0px;
-    border-top: 2px solid red;
+    height: 20px;
+    border-top: 2px solid #157E9F;;
+    cursor: pointer;
 
     &::before{
         content: '';
         width:20px;
-        border-top: 2px solid red;
+        border-top: 2px solid #157E9F;
         display: block;
         margin-top: 5px;
     }
     &::after{
         content: '';
         width:20px;
-        border-top: 2px solid red;
+        border-top: 2px solid #157E9F;
         display: block;
         margin-top: 5px;
     }
@@ -66,7 +67,16 @@ html * {
     margin-top: 30px;
     padding: 0 0 25px 0;
             @media only screen and (max-width:1509px){
+            font-size: 16px;
+        }
+             @media only screen and (max-width:1409px){
             font-size: 14px;
+        }
+    
+        &_col-phones{
+            display: flex;
+            justify-content: space-between;
+            align-items:baseline;
         }
 
     &__socials{
@@ -123,6 +133,7 @@ html * {
         &-phones{
         
             display: flex;
+            
             ul {
                 list-style-type: none;
                 font-weight: bold;
