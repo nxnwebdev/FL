@@ -8,6 +8,29 @@ html * {
           box-sizing: border-box;
 }
 
+.ma-burger {
+  display: block;
+  width: 20px;
+  height: 0px;
+  border-top: 2px solid red;
+}
+
+.ma-burger::before {
+  content: '';
+  width: 20px;
+  border-top: 2px solid red;
+  display: block;
+  margin-top: 5px;
+}
+
+.ma-burger::after {
+  content: '';
+  width: 20px;
+  border-top: 2px solid red;
+  display: block;
+  margin-top: 5px;
+}
+
 .ma-wrapper {
   max-width: 1650px;
   padding: 0px;
@@ -46,6 +69,13 @@ html * {
 .ma-header {
   font-size: 18px;
   margin-top: 30px;
+  padding: 0 0 25px 0;
+}
+
+@media only screen and (max-width: 1509px) {
+  .ma-header {
+    font-size: 14px;
+  }
 }
 
 .ma-header__socials {
@@ -99,25 +129,18 @@ html * {
   outline: none;
 }
 
-.ma-header__top {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 0 25px 0;
-}
-
-.ma-header__top-phones {
+.ma-header-phones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.ma-header__top-phones ul {
+.ma-header-phones ul {
   list-style-type: none;
   font-weight: bold;
 }
 
-.ma-header__top-phones::before {
+.ma-header-phones::before {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -126,12 +149,18 @@ html * {
   transition: all .3s ease;
 }
 
-.ma-header__top-phones:hover::before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+@media only screen and (max-width: 1116px) {
+  .ma-header-phones::before {
+    margin-right: 7px;
+  }
 }
 
-.ma-header__top-time {
+.ma-header-phones:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ma-header-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +169,13 @@ html * {
           justify-content: center;
 }
 
-.ma-header__top-time ul {
+@media only screen and (max-width: 1288px) {
+  .ma-header-time {
+    font-size: 14px;
+  }
+}
+
+.ma-header-time ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +185,7 @@ html * {
           justify-content: space-between;
 }
 
-.ma-header__top-time::before {
+.ma-header-time::before {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -159,17 +194,27 @@ html * {
   transition: all .3s ease;
 }
 
-.ma-header__top-time:hover::before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+@media only screen and (max-width: 1116px) {
+  .ma-header-time::before {
+    margin-right: 7px;
+  }
 }
 
-.ma-header__top-time-items_hours {
-  margin-left: 20px;
+.ma-header-time:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ma-header-time-items {
+  width: 100%;
+}
+
+.ma-header-time-items_hours {
+  margin-left: 5px;
   font-weight: bolder;
 }
 
-.ma-header__top-address {
+.ma-header-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +223,13 @@ html * {
           justify-content: center;
 }
 
-.ma-header__top-address::before {
+@media only screen and (max-width: 1288px) {
+  .ma-header-address {
+    font-size: 14px;
+  }
+}
+
+.ma-header-address::before {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -187,12 +238,18 @@ html * {
   transition: all .3s ease;
 }
 
-.ma-header__top-address:hover::before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+@media only screen and (max-width: 1116px) {
+  .ma-header-address::before {
+    margin-right: 7px;
+  }
 }
 
-.ma-header__top-btn {
+.ma-header-address:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ma-header-btn {
   float: right;
   background: #157E9F;
   border-radius: 90px;
@@ -203,7 +260,7 @@ html * {
   transition: all .15s ease-in-out;
 }
 
-.ma-header__top-btn:hover {
+.ma-header-btn:hover {
   background-color: rgba(21, 126, 159, 0.8);
 }
 
@@ -216,6 +273,12 @@ html * {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+
+@media only screen and (max-width: 1288px) {
+  .ma-header__menu {
+    font-size: 16px;
+  }
 }
 
 .ma-header__menu_item {

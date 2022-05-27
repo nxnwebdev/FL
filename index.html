@@ -17,44 +17,46 @@
 <div class="ma-wrapper">
     <div class="container-fluid">
         <div class="ma-header">
-        <div class="ma-header__top row align-items-start">
-            <div class="col-2">
-                <div class="ma-header__top-logo"><a href="/"><img src="img/logo.svg" alt="meadrt"></a></div>
+        <div class="row align-items-start">
+            <div class="col col-sm-2">
+                <div class="ma-header-logo"><a href="/"><img src="img/logo.svg" alt="meadrt"></a></div>
             </div>
-            <div class="col-2">
-                <div class="ma-header__top-phones">
-                    <ul class=""><li class="ma-header__top-phones_item">+7 812 640-77-17</li>
-                        <li class="ma-header__top-phones_item">+7 931 365-58-88</li></ul>
+            <div class="col d-flex d-sm-block">
+                
+                <div class="ma-header-phones">
+                    <ul class=""><li class="ma-header-phones_item">+7 812 640-77-17</li>
+                        <li class="ma-header-phones_item">+7 931 365-58-88</li></ul>
+                </div>
+                <div class="ma-header-burger d-block d-sm-none">
+                    <span class="ma-burger"></span>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="ma-header__top-address">
+            <div class="col col-xl-3 d-none d-sm-block justify-content-between">
+                <div class="ma-header-address">
                     Санкт-Петербург, Приморский район,<br> ул. Шаврова 13/1
                 </div>
             </div>
-            <div class="col-2">
-                <div class="ma-header__top-time">
-                    <div class="ma-header__top-time-items">
+            <div class="col d-none d-sm-block">
+                <div class="ma-header-time">
+                    <div class="ma-header-time-items">
                         <ul>
                             <li>Будни</li>
-                            <li class="ma-header__top-time-items_hours">10:00 - 21:00</li>
+                            <li class="ma-header-time-items_hours">10:00 - 21:00</li>
                         </ul>
                         <ul>
                             <li>Суббота</li>
-                            <li class="ma-header__top-time-items_hours">10:00 - 18:00</li>
+                            <li class="ma-header-time-items_hours">10:00 - 18:00</li>
                         </ul>
                     </div>
                     
                        
                 </div>
             </div>
-            <div class="col-2">
-                <button class="btn ma-header__top-btn">Записаться на прием</button>
+            <div class="col d-none d-sm-block">
+                <button class="btn ma-header-btn">Записаться <span class="d-none d-xl-inline">на прием</span></button>
             </div>
-            
-        </div>
-        <div class="ma-header__bottom row align-items-end">
-            <div class="col-7">
+            <div class="w-100 my-3"></div>
+            <div class="col-lg-8 d-none d-sm-block">
                 <ul class="ma-header__menu">
                     <li class="ma-header__menu_item"><a href="#">Новости</a></li>
                     <li class="ma-header__menu_item"><a href="#">Наши врачи</a></li>
@@ -82,23 +84,27 @@
                     </li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col d-none d-sm-block">
                 <div class="ma-header__socials">
                     <a href="" class="icon icon_ok"></a>
                     <a href="" class="icon icon_vk"></a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-none d-sm-block">
                 <form class="ma-header__search">
                     <input type="text"  placeholder="Поиск" class="ma-header__search_input" />
                     <input type="submit" class="ma-header__search_btn" value=""/>
                   </form>
             </div>
             
+        </div>
+        
+           
+            
             
             
     
-        </div>
+       
     </div>
     </div>
 

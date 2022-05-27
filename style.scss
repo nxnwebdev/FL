@@ -8,7 +8,28 @@ html * {
     box-sizing: border-box;
     
 }
+.ma-burger{
+    display: block;
+    width: 20px;
+    height: 0px;
+    border-top: 2px solid red;
 
+    &::before{
+        content: '';
+        width:20px;
+        border-top: 2px solid red;
+        display: block;
+        margin-top: 5px;
+    }
+    &::after{
+        content: '';
+        width:20px;
+        border-top: 2px solid red;
+        display: block;
+        margin-top: 5px;
+    }
+   
+}
 .ma-wrapper{
     max-width:1650px;
     padding: 0px;
@@ -43,6 +64,10 @@ html * {
 .ma-header{
     font-size: 18px;
     margin-top: 30px;
+    padding: 0 0 25px 0;
+            @media only screen and (max-width:1509px){
+            font-size: 14px;
+        }
 
     &__socials{
         display: flex;
@@ -92,9 +117,9 @@ html * {
        
     }
 
-    &__top{
-        justify-content: space-between;
-        padding: 0 0 25px 0;
+    
+        //justify-content: space-between;
+        
         &-phones{
         
             display: flex;
@@ -107,15 +132,21 @@ html * {
                 transform: scale(0.8);
                 content: url('img/phone-header.svg');
                 transition: all .3s ease;
+                @media only screen and (max-width:1116px){
+                    margin-right: 7px;
+                }
             }
             &:hover::before{
-                transform: scale(1.2);
+                transform: scale(1);
             }
         }
         &-time {
             
             display: flex;
             justify-content: center;
+                @media only screen and (max-width:1288px){
+                font-size: 14px;
+            }
             ul{
                 display: flex;
                 list-style-type: none;
@@ -126,27 +157,41 @@ html * {
                 transform: scale(0.8);
                 content: url('img/time-header.svg');
                 transition: all .3s ease;
+                    @media only screen and (max-width:1116px){
+                    margin-right: 7px;
+                }
             }
             &:hover::before{
-                transform: scale(1.2);
+                transform: scale(1);
             }
-            &-items_hours{
-                margin-left: 20px;
-                font-weight: bolder;
-
+            &-items{
+                width: 100%;
+                
+                &_hours{
+                    margin-left: 5px;
+                    font-weight: bolder;
+    
+                }
             }
+            
         }
         &-address{
                 display: flex;
                 justify-content: center;
+                    @media only screen and (max-width:1288px){
+                font-size: 14px;
+            }
                 &::before{ 
                     margin-right: 25px;
                     transform: scale(0.8);
                     content: url('img/address-header.svg');
                     transition: all .3s ease;
+                    @media only screen and (max-width:1116px){
+                        margin-right: 7px;
+                    }
                 }
                 &:hover::before{
-                    transform: scale(1.2);
+                    transform: scale(1);
                 }
                 
             }
@@ -165,7 +210,7 @@ html * {
         
         
     
-    }
+    
 
    &__bottom{
        
@@ -177,6 +222,9 @@ html * {
         //padding: 0 5px 0;
         justify-content: space-between;
         position: relative;
+        @media only screen and (max-width:1288px){
+            font-size: 16px;
+        }
         &_item{
             padding:12px 5px 12px 0;
             & a{
