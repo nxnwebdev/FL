@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
 
+$mob:667px;
+$tablet:1024px;
+
+
 html * {
     padding: 0;
     margin: 0;
@@ -9,11 +13,14 @@ html * {
     
 }
 .ma-burger{
-    display: block;
+    position:absolute;
+    display: none;
     width: 20px;
     height: 20px;
     border-top: 2px solid #157E9F;;
     cursor: pointer;
+    right: 15px;
+    top:15px;
 
     &::before{
         content: '';
@@ -28,6 +35,10 @@ html * {
         border-top: 2px solid #157E9F;
         display: block;
         margin-top: 5px;
+    }
+
+    @media (max-width:$tablet){
+        display: block;
     }
    
 }
@@ -72,11 +83,61 @@ html * {
              @media only screen and (max-width:1409px){
             font-size: 14px;
         }
-    
+        &_col-logo{
+            
+            display: flex;
+            align-items: center;
+        }
         &_col-phones{
             display: flex;
             justify-content: space-between;
-            align-items:baseline;
+            align-items:center;
+            @media (max-width:$mob) {
+                justify-content: left;
+            }
+        }
+        &_col-address{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            @media (max-width:$tablet){
+                display: none;
+            }
+        }
+        &_col-time{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            @media (max-width:$mob){
+                display: none;
+            }
+            
+        }
+        &_col-order{
+            display: flex;
+            justify-content: right;
+            position: relative;
+            @media (max-width:$tablet) {
+                display: none;
+            }
+            
+        
+        }
+        &_col-menu{
+            @media (max-width:$mob){
+                display: none;
+            }
+            
+        }
+        &_col-socials{
+            @media (max-width:$tablet){
+                display: none;
+            }
+        }
+        &_col-search{
+            @media (max-width:$tablet){
+                display: none;
+            }
         }
 
     &__socials{
@@ -118,22 +179,32 @@ html * {
             min-width:60px;
             padding: 12px 0px;
             cursor: pointer;
-
+            
             &:focus{
                 outline: none;
 
             }
+            
         }
        
     }
 
     
         //justify-content: space-between;
-        
+        &-logo{
+            & img{
+                @media (max-width:$mob){
+                    //max-width:100px;
+                }
+            }
+            
+        }
         &-phones{
         
             display: flex;
-            
+            @media (max-width:$mob){
+                //margin: 0 auto;
+            }
             ul {
                 list-style-type: none;
                 font-weight: bold;
@@ -146,6 +217,9 @@ html * {
                 @media only screen and (max-width:1116px){
                     margin-right: 7px;
                 }
+                @media (max-width:$mob) {
+                    //display: none;
+                }
             }
             &:hover::before{
                 transform: scale(1);
@@ -155,6 +229,7 @@ html * {
             
             display: flex;
             justify-content: center;
+            align-items: center;
                 @media only screen and (max-width:1288px){
                 font-size: 14px;
             }
@@ -170,6 +245,9 @@ html * {
                 transition: all .3s ease;
                     @media only screen and (max-width:1116px){
                     margin-right: 7px;
+                }
+                @media (max-width:$mob) {
+                    display: none;
                 }
             }
             &:hover::before{
@@ -189,6 +267,7 @@ html * {
         &-address{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                     @media only screen and (max-width:1288px){
                 font-size: 14px;
             }
@@ -217,22 +296,18 @@ html * {
                 &:hover{
                     background-color: rgba(21, 126, 159, 0.8);
                 }
+                
         }
-        
-        
-    
-    
-
-   &__bottom{
-       
-   }
 
     &__menu{
         list-style-type: none;
         display: flex;
-        //padding: 0 5px 0;
+        padding: 0;
         justify-content: space-between;
-        position: relative;
+        
+        @media (max-width:$tablet) {
+            display: none;
+        }
         @media only screen and (max-width:1288px){
             font-size: 16px;
         }
@@ -249,6 +324,7 @@ html * {
                 
             }
             &-sub{
+                position: relative;
                 &:after{
                     content: url('/img/arrow_down-header.svg');
                     width: 10px;
@@ -273,11 +349,16 @@ html * {
             list-style-type: none;
             width:max-content;
             padding: 30px;
-            min-width: 320px;
+            min-width: auto;
             box-shadow: 0px 4px 24px rgba(124, 51, 41, 0.15);
             border-radius: 10px;
             background-color: #fff;
             margin-top:12px;
+            z-index: 999;
+            @media (max-width:$tablet) {
+                right:0;
+                min-width: auto;
+            }
             &_item{
                 padding:25px 0 0;
                 &:first-child{
