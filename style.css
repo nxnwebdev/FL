@@ -12,6 +12,41 @@ html * {
   color: #3AA2C4 !important;
 }
 
+.ma-wrapper {
+  max-width: 1650px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  margin: 0 5px;
+  background-position: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.icon_vk {
+  background-image: url("/img/vk-header.svg");
+}
+
+.icon_vk:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.icon_ok {
+  background-image: url("/img/ok-header.svg");
+}
+
+.icon_ok:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .ma-burger {
   position: absolute;
   display: none;
@@ -89,41 +124,6 @@ html * {
   transition: -webkit-transform .7s ease-out;
   transition: transform .7s ease-out;
   transition: transform .7s ease-out, -webkit-transform .7s ease-out;
-}
-
-.ma-wrapper {
-  max-width: 1650px;
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  display: block;
-  background-repeat: no-repeat;
-  margin: 0 5px;
-  background-position: center;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.icon_vk {
-  background-image: url("/img/vk-header.svg");
-}
-
-.icon_vk:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.icon_ok {
-  background-image: url("/img/ok-header.svg");
-}
-
-.icon_ok:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .ma-header {
