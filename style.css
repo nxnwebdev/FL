@@ -144,6 +144,16 @@ html * {
   }
 }
 
+.ma-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-top: 3px solid #ffb5b5;
+  top: 0;
+  left: 0;
+}
+
 .ma-header_col-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,10 +317,22 @@ html * {
   outline: none;
 }
 
+.ma-header__search_btn:hover {
+  background-color: #ffb5b5;
+}
+
 .ma-header-phones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ma-header-phones a {
+  color: #000;
+}
+
+.ma-header-phones a:hover {
+  text-decoration: none;
 }
 
 .ma-header-phones ul {
