@@ -13,10 +13,23 @@ $(document).ready(function(){
     });
 
     $('.ma-header__menu_item-sub').on('click',function(e){
+      e.preventDefault();
+
         if ($(e.currentTarget).hasClass('ma-header__menu_item-sub-mobile')){
-            e.preventDefault();
+            
             $(e.currentTarget).toggleClass('active');
             $(e.currentTarget).find('.ma-header__menu-sub').toggleClass('ma-header__menu-sub-mobile')
         }
+       
     });
+
+    $('.ma-header__menu-sub_item a').on('click',function(e){
+        e.stopPropagation();
+        const href = $(e.target).attr('href');
+        if(href){
+            document.location.href = $(e.target).attr('href');
+        }
+        
+    });
+
 });
