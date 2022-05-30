@@ -12,35 +12,80 @@ html * {
     box-sizing: border-box;
     
 }
+.active{
+    &>a{
+        color: #3AA2C4!important;
+    }
+    
+}
 .ma-burger{
     position:absolute;
     display: none;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-top: 2px solid #157E9F;;
     cursor: pointer;
     right: 15px;
     top:15px;
+    opacity: 1;
+    transition: border-top 1s, .2s;
+    
+    
 
     &::before{
         content: '';
-        width:20px;
+        width:25px;
         border-top: 2px solid #157E9F;
         display: block;
         margin-top: 5px;
+        transition: all 1s;
     }
     &::after{
         content: '';
-        width:20px;
+        float: right;
+        width:30px;
         border-top: 2px solid #157E9F;
         display: block;
         margin-top: 5px;
+        transition: all 1s;
     }
 
     @media (max-width:$tablet){
         display: block;
     }
    
+    &_open{
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background-color: #fff;
+        z-index: 9999;
+        border-top: none;
+        right: 15px;
+        
+        
+        
+        &::before{
+            content: '';
+            width: 26px;
+            border-top: 2px solid #157E9F;
+            display: block;
+            margin-top: 5px;
+            transform: rotate(-45deg);
+            transition: transform .7s ease-out;
+        }
+        &::after{
+            content: '';
+            width: 26px;
+            border-top: 2px solid #157E9F;
+            display: block;
+            margin-top: -1px;
+            transform: rotate(45deg);
+            transition: transform .7s ease-out;
+        }
+
+        
+    }
 }
 .ma-wrapper{
     max-width:1650px;
@@ -94,6 +139,10 @@ html * {
             align-items:center;
             @media (max-width:$mob) {
                 justify-content: left;
+                margin-left: 15px;
+            }
+            @media (min-width:$tablet) {
+                justify-content: center;
             }
         }
         &_col-address{
@@ -325,21 +374,27 @@ html * {
             }
             &-sub{
                 position: relative;
-                &:after{
+                &>a:after{
                     content: url('/img/arrow_down-header.svg');
                     width: 10px;
                     padding-left: 7px;
                     
     
                 }
-                &:hover .ma-header__menu-sub{
-                    display: block;
-                }
+                
                 &:hover>a{
                     color: #3AA2C4;
                 }
+
+                @media (min-width:$tablet) {
+                    &:hover .ma-header__menu-sub{
+                        display: block;
+                    }
+                }
+                
                 
             }
+            
         }
         
 
@@ -367,7 +422,18 @@ html * {
                 
                 
             }
+
+            &-mobile{
+                display: block;
+                position: relative;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                box-shadow: none;
+            }
         }
+
+        
     }
 }
 
