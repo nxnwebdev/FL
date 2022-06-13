@@ -1,0 +1,111 @@
+.ma-main-services{
+    
+    &__title{
+        margin-top: 120px;
+        color: #2D1C1A;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 60px;
+    }
+    &__items{
+        margin-top: 60px;
+
+        &-item{
+            display: block;
+           
+            padding: 30px;
+            margin:15px auto;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 16px rgba(124, 51, 41, 0.15);
+            border-radius: 10px;
+            min-height: 85%;
+           &:hover{
+            text-decoration: none;
+            box-shadow: 0px 2px 16px #f8b9b5;
+           } 
+            h2{
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 51px;
+                color: #2D1C1A;
+                display: flex;
+                justify-content: center;
+                
+                text-align: left;
+                @media (max-width:$mob) {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                @media (max-width:$tablet) {
+                    flex-direction: column;
+                    justify-content: left;
+
+                }
+                &::before{
+                    content: '';
+                    margin-right: 2%;
+                    max-width:100px;
+                    max-height:100px;
+                    display: flex;
+                    @media (max-width:$tablet) {
+                        max-width: 50px;
+                        max-height: 50px;
+                        align-self: flex-start;
+                    }
+                    
+                }
+                &::after{
+                    content: url(/img/services/nav.svg);
+                    max-width: 80px;
+                    max-height: 20px;
+                    position: absolute;
+                    bottom: 45px;
+                    right: 40px;
+                    @media (max-width:$desk) {
+                        transform: scale(0.9);
+                    }
+                    @media (max-width:$mob) {
+                        bottom: 25px;
+                        transform: scale(0.9);
+
+                    }
+                }
+                &.pregnancy{
+                    &::before{
+                        content:url(/img/services/beremennost.svg);
+                    }
+                }
+                &.infertility{
+                    &::before{
+                        content:url(/img/services/besplodie_i.svg);
+                    }
+                }
+                &.diagnostics{
+                    &::before{
+                        content:url(/img/services/diagnostika_i.svg);
+                    }
+                }
+                &.ginekonog{
+                    &::before{
+                        content:url(/img/services/ginekologiy_i.svg);
+                    }
+                }
+                &.skin{
+                    &::before{
+                        content:url(/img/services/kozha_i.svg);
+                    }
+                }
+                &.dietolog{
+                    &::before{
+                        content:url(/img/services/uro.svg);
+                    }                   
+                }
+
+
+
+
+            }
+        }
+
+    }
+}

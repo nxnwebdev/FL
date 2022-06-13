@@ -11,7 +11,14 @@ $(document).ready(function(){
      $('.ma-header_col-socials').toggleClass('order-10 col-6  d-block');
      $('.ma-header_col-search').toggleClass('order-11 d-block m-auto');
     });
-
+    $('.ma-main-slider__items').slick({
+        prevArrow:'<svg class="ma-main-slider_btn" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 2L3 37L33 72"  stroke-width="4" stroke-linecap="round"/></svg>',
+        nextArrow:'<svg class="ma-main-slider_btn" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L32 37L2 72"  stroke-width="4" stroke-linecap="round"/></svg>',
+        dots:true,
+        customPaging : function(slider, i) {
+            return '<a href="#"><span></span></a>';
+        },
+    });
     $('.ma-header__menu_item-sub').on('click',function(e){
       e.preventDefault();
 

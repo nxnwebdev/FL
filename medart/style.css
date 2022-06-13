@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap");
-html * {
+* {
   padding: 0;
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-family: 'Source Sans 3', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
 }
 
 .active > a {
@@ -545,7 +549,7 @@ html * {
           box-shadow: 0px 4px 24px rgba(124, 51, 41, 0.15);
   border-radius: 10px;
   background-color: #fff;
-  margin-top: 12px;
+  margin: 1rem 5px !important;
   z-index: 999;
 }
 
@@ -580,5 +584,226 @@ html * {
 
 .ma-header__menu-sub-mobile li::before {
   content: ' - ';
+}
+
+.ma-main-slider {
+  background-color: #3aa2c3;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.ma-main-slider .slick-dots {
+  padding: 10px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+.ma-main-slider .slick-dots li {
+  padding: 10px 5px;
+}
+
+.ma-main-slider .slick-dots li.slick-active span {
+  background-color: #fff;
+}
+
+.ma-main-slider .slick-dots li span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #74BDD4;
+  border-radius: 50%;
+}
+
+.ma-main-slider_btn {
+  max-height: 70px;
+  max-width: 35px;
+  stroke: #74BDD4;
+  margin: 0 15px;
+}
+
+.ma-main-slider_btn:hover {
+  stroke: #fff;
+}
+
+.ma-main-slider__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ma-main-slider__text {
+  max-width: 670px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.ma-main-slider__text h2 {
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 25px;
+}
+
+.ma-main-slider__text p {
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.ma-main-slider__img {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ma-main-slider__img img {
+  max-height: 265px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ma-main-services__title {
+  margin-top: 120px;
+  color: #2D1C1A;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 60px;
+}
+
+.ma-main-services__items {
+  margin-top: 60px;
+}
+
+.ma-main-services__items-item {
+  display: block;
+  padding: 30px;
+  margin: 15px auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 16px rgba(124, 51, 41, 0.15);
+          box-shadow: 0px 2px 16px rgba(124, 51, 41, 0.15);
+  border-radius: 10px;
+  min-height: 85%;
+}
+
+.ma-main-services__items-item:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 0px 2px 16px #f8b9b5;
+          box-shadow: 0px 2px 16px #f8b9b5;
+}
+
+.ma-main-services__items-item h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 51px;
+  color: #2D1C1A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+@media (max-width: 667px) {
+  .ma-main-services__items-item h2 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ma-main-services__items-item h2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.ma-main-services__items-item h2::before {
+  content: '';
+  margin-right: 2%;
+  max-width: 100px;
+  max-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .ma-main-services__items-item h2::before {
+    max-width: 50px;
+    max-height: 50px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.ma-main-services__items-item h2::after {
+  content: url(/img/services/nav.svg);
+  max-width: 80px;
+  max-height: 20px;
+  position: absolute;
+  bottom: 45px;
+  right: 40px;
+}
+
+@media (max-width: 1368px) {
+  .ma-main-services__items-item h2::after {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media (max-width: 667px) {
+  .ma-main-services__items-item h2::after {
+    bottom: 25px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+.ma-main-services__items-item h2.pregnancy::before {
+  content: url(/img/services/beremennost.svg);
+}
+
+.ma-main-services__items-item h2.infertility::before {
+  content: url(/img/services/besplodie_i.svg);
+}
+
+.ma-main-services__items-item h2.diagnostics::before {
+  content: url(/img/services/diagnostika_i.svg);
+}
+
+.ma-main-services__items-item h2.ginekonog::before {
+  content: url(/img/services/ginekologiy_i.svg);
+}
+
+.ma-main-services__items-item h2.skin::before {
+  content: url(/img/services/kozha_i.svg);
+}
+
+.ma-main-services__items-item h2.dietolog::before {
+  content: url(/img/services/uro.svg);
 }
 /*# sourceMappingURL=style.css.map */
