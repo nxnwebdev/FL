@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
 
-@import 'modules/styles';
+@import 'modules/defaults';
 @import 'modules/variables';
 @import 'modules/ma-burger';
 @import 'modules/ma-header';
 @import 'modules/ma-main-slider';
+@import 'modules/ma-main-title';
 @import 'modules/ma-main-services';
+@import 'modules/ma-main-about';
+@import 'modules/ma-main-team';
+@import 'modules/ma-team-slider';
+@import 'modules/ma-footer';
 
 
 
