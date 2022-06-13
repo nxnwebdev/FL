@@ -22,6 +22,14 @@
                     line-height: 26px;
                 }
             }
+            &_service{
+                max-height: 300px;
+                overflow-y: scroll;
+                @media (max-width:$tablet) {
+                    overflow: hidden;
+                    max-height:100%;
+                }
+            }
         }
         &-contacts{
             display: flex;

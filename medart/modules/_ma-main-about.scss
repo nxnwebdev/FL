@@ -1,10 +1,13 @@
 .ma-main-about{
     margin-top: $ma_mtop;
     &__text{
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        text-indent: 8px;
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            text-indent: 8px;
+        }
+        
 
     }
 }

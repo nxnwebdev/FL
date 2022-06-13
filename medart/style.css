@@ -589,8 +589,8 @@ ul {
 .ma-main-slider {
   background-color: #3aa2c3;
   width: 100%;
-  color: #fff;
   position: relative;
+  color: #fff;
 }
 
 .ma-main-slider .slick-dots {
@@ -647,10 +647,27 @@ ul {
   padding-bottom: 60px;
 }
 
+.ma-main-slider__text a {
+  color: #fff;
+}
+
+.ma-main-slider__text a:hover {
+  text-decoration: underline;
+}
+
 .ma-main-slider__text h2 {
   font-size: 36px;
   line-height: 51px;
   margin-top: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .ma-main-slider__text h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .ma-main-slider__text p {
@@ -659,24 +676,29 @@ ul {
   line-height: 34px;
 }
 
+@media (max-width: 1024px) {
+  .ma-main-slider__text p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
 .ma-main-slider__img {
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .ma-main-slider__img img {
-  max-height: 265px;
   border: 1px solid #fff;
   border-radius: 50%;
   overflow: hidden;
+  min-height: 265px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .ma-main-title {
@@ -684,6 +706,7 @@ ul {
   line-height: 60px;
   color: #2D1C1A;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .ma-main-services {
@@ -718,7 +741,7 @@ ul {
 }
 
 .ma-main-services__items-item h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 51px;
   color: #2D1C1A;
@@ -806,7 +829,7 @@ ul {
   margin-top: 120px;
 }
 
-.ma-main-about__text {
+.ma-main-about__text p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -935,6 +958,18 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+}
+
+.ma-footer__content-links_service {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  .ma-footer__content-links_service {
+    overflow: hidden;
+    max-height: 100%;
+  }
 }
 
 .ma-footer__content-contacts {
