@@ -913,7 +913,7 @@ ul {
 }
 
 .ma-footer__content {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 
 .ma-footer__content-title {
@@ -1036,5 +1036,10 @@ ul {
 
 .ma-footer__content-contacts_logo {
   margin-left: 50px;
+}
+
+.ma-footer__copyright p {
+  margin: 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
