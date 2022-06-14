@@ -34,7 +34,7 @@ ul {
 }
 
 .icon_vk {
-  background-image: url("/img/vk-header.svg");
+  background-image: url("/images/ma/vk-header.svg");
 }
 
 .icon_vk:hover {
@@ -43,7 +43,7 @@ ul {
 }
 
 .icon_ok {
-  background-image: url("/img/ok-header.svg");
+  background-image: url("/images/ma/ok-header.svg");
 }
 
 .icon_ok:hover {
@@ -307,7 +307,7 @@ ul {
 }
 
 .ma-header__search_btn {
-  background-image: url("/img/search-header.svg");
+  background-image: url("/images/ma/search-header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -348,7 +348,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("img/phone-header.svg");
+  content: url("/images/ma/phone-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -396,7 +396,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("img/time-header.svg");
+  content: url("/images/ma/time-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -449,7 +449,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("img/address-header.svg");
+  content: url("/images/ma/address-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -466,6 +466,9 @@ ul {
 }
 
 .ma-header-btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
   float: right;
   background: #157E9F;
   border-radius: 90px;
@@ -478,6 +481,12 @@ ul {
 
 .ma-header-btn:hover {
   background-color: rgba(21, 126, 159, 0.8);
+}
+
+.ma-header-btn span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .ma-header__menu {
@@ -521,7 +530,7 @@ ul {
 }
 
 .ma-header__menu_item-sub > a:after {
-  content: url("/img/arrow_down-header.svg");
+  content: url("/images/ma/arrow_down-header.svg");
   width: 10px;
   padding-left: 7px;
 }
@@ -593,6 +602,12 @@ ul {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .ma-main-slider_nav {
+    padding: 0 0 15px;
+  }
+}
+
 .ma-main-slider .slick-dots {
   padding: 10px;
   list-style: none;
@@ -617,7 +632,14 @@ ul {
   width: 10px;
   height: 10px;
   background-color: #74BDD4;
-  border-radius: 50%;
+  border-radius: 50% 0 50%;
+}
+
+@media (max-width: 1024px) {
+  .ma-main-slider .slick-dots {
+    left: 0;
+    padding: 0;
+  }
 }
 
 .ma-main-slider_btn {
@@ -647,6 +669,12 @@ ul {
   padding-bottom: 60px;
 }
 
+@media (max-width: 1024px) {
+  .ma-main-slider__text {
+    padding-top: 0;
+  }
+}
+
 .ma-main-slider__text a {
   color: #fff;
 }
@@ -667,6 +695,7 @@ ul {
   .ma-main-slider__text h2 {
     font-size: 24px;
     line-height: 34px;
+    text-align: left;
   }
 }
 
@@ -692,7 +721,7 @@ ul {
 
 .ma-main-slider__img img {
   border: 1px solid #fff;
-  border-radius: 50%;
+  border-radius: 50% 0 50%;
   overflow: hidden;
   min-height: 265px;
   -o-object-fit: cover;
@@ -701,12 +730,26 @@ ul {
      object-position: right;
 }
 
+@media (max-width: 1024px) {
+  .ma-main-slider__img img {
+    min-height: 150px;
+    border-radius: none;
+  }
+}
+
 .ma-main-title {
   font-size: 42px;
   line-height: 60px;
   color: #2D1C1A;
   margin-bottom: 40px;
   font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .ma-main-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .ma-main-services {
@@ -741,7 +784,7 @@ ul {
 }
 
 .ma-main-services__items-item h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: #2D1C1A;
@@ -778,22 +821,18 @@ ul {
   margin-right: 2%;
   max-width: 100px;
   max-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-table;
 }
 
 @media (max-width: 1024px) {
   .ma-main-services__items-item h2::before {
     max-width: 50px;
     max-height: 50px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
   }
 }
 
 .ma-main-services__items-item h2::after {
-  content: url(/img/services/nav.svg);
+  content: url(/images/ma/services/nav.svg);
   right: 25px;
   text-align: right;
   display: block;
@@ -802,27 +841,27 @@ ul {
 }
 
 .ma-main-services__items-item h2.pregnancy::before {
-  content: url(/img/services/beremennost.svg);
+  content: url(/images/ma/services/beremennost.svg);
 }
 
 .ma-main-services__items-item h2.infertility::before {
-  content: url(/img/services/besplodie_i.svg);
+  content: url(/images/ma/services/besplodie_i.svg);
 }
 
 .ma-main-services__items-item h2.diagnostics::before {
-  content: url(/img/services/diagnostika_i.svg);
+  content: url(/images/ma/services/diagnostika_i.svg);
 }
 
 .ma-main-services__items-item h2.ginekonog::before {
-  content: url(/img/services/ginekologiy_i.svg);
+  content: url(/images/ma/services/ginekologiy_i.svg);
 }
 
 .ma-main-services__items-item h2.skin::before {
-  content: url(/img/services/kozha_i.svg);
+  content: url(/images/ma/services/kozha_i.svg);
 }
 
 .ma-main-services__items-item h2.dietolog::before {
-  content: url(/img/services/uro.svg);
+  content: url(/images/ma/services/uro.svg);
 }
 
 .ma-main-about {
@@ -920,7 +959,7 @@ ul {
 }
 
 .ma-team-slider__item-info p::after {
-  content: url(/img/services/nav.svg);
+  content: url(/images/ma/services/nav.svg);
   width: 100%;
   bottom: 0;
   display: block;
@@ -963,6 +1002,10 @@ ul {
 .ma-footer__content-links_service {
   max-height: 300px;
   overflow-y: scroll;
+  scrollbar-color: #ffb5b5 #3AA2C4;
+  -webkit-transition: scrollbar-color 0.3s ease-out;
+  transition: scrollbar-color 0.3s ease-out;
+  scrollbar-width: thin;
 }
 
 @media (max-width: 1024px) {
@@ -1006,7 +1049,7 @@ ul {
 }
 
 .ma-footer__content-contacts_phones:before {
-  content: url(/img/footer/phone.svg);
+  content: url(/images/ma/footer/phone.svg);
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -1027,7 +1070,7 @@ ul {
 }
 
 .ma-footer__content-contacts_time:before {
-  content: url(/img/footer/time.svg);
+  content: url(/images/ma/footer/time.svg);
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -1044,7 +1087,7 @@ ul {
 }
 
 .ma-footer__content-contacts_addres:before {
-  content: url(/img/footer/addres.svg);
+  content: url(/images/ma/footer/addres.svg);
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -1060,13 +1103,13 @@ ul {
 }
 
 .ma-footer__content-contacts_socials .icon_ok {
-  background-image: url(/img/footer/ok.svg);
+  background-image: url(/images/ma/footer/ok.svg);
   width: 40px;
 }
 
 .ma-footer__content-contacts_socials .icon_vk {
   width: 40px;
-  background-image: url(/img/footer/vk.svg);
+  background-image: url(/images/ma/footer/vk.svg);
 }
 
 .ma-footer__content-contacts_logo {

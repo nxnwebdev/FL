@@ -25,6 +25,10 @@
             &_service{
                 max-height: 300px;
                 overflow-y: scroll;
+                scrollbar-color: #ffb5b5 #3AA2C4;
+                transition: scrollbar-color 0.3s ease-out;
+                scrollbar-width: thin;
+   
                 @media (max-width:$tablet) {
                     overflow: hidden;
                     max-height:100%;

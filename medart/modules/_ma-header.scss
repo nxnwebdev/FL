@@ -237,6 +237,9 @@
                 
             }
         &-btn{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
                 float: right;
                 background: #157E9F;
                 border-radius: 90px;
@@ -246,6 +249,11 @@
                 transition: all .15s ease-in-out;
                 &:hover{
                     background-color: rgba(21, 126, 159, 0.8);
+                }
+                span{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
                 }
                 
         }
