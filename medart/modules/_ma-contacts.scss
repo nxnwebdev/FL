@@ -1,0 +1,48 @@
+.ma-contacts{
+    &__map{
+        margin-bottom:-120px;
+        position: relative;
+        min-height:600px;
+        &_info{
+            
+            position: absolute;
+            z-index: 999;
+            width:388px;
+            top:60px;
+            right: 140px;
+            background-color: #fff;
+           
+            
+            dl{
+                padding:20px 30px;
+                a{
+                    color:#000;
+                }
+                dt{
+                    font-size: 22px;
+                    line-height: 31px;
+                    margin-bottom: 3px;
+                    margin-top: 20px;
+                }
+                dd{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+
+            h1{
+                background-color: #3AA2C4;
+                color:#fff;
+                font-size: 36px;
+                padding: 15px;
+                border-radius: 10px 10px 0px 0px;
+                &::after{
+                    content:url('/img/contacts/arrow_cont.svg');
+                    width:9px;
+                    height: 15px;
+                    float: right;
+                }
+            }
+        }
+    }
+}

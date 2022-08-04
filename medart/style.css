@@ -34,7 +34,7 @@ ul {
 }
 
 .icon_vk {
-  background-image: url("/images/ma/vk-header.svg");
+  background-image: url("/img/vk-header.svg");
 }
 
 .icon_vk:hover {
@@ -43,7 +43,7 @@ ul {
 }
 
 .icon_ok {
-  background-image: url("/images/ma/ok-header.svg");
+  background-image: url("/img/ok-header.svg");
 }
 
 .icon_ok:hover {
@@ -307,7 +307,7 @@ ul {
 }
 
 .ma-header__search_btn {
-  background-image: url("/images/ma/search-header.svg");
+  background-image: url("/img/search-header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -348,7 +348,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("/images/ma/phone-header.svg");
+  content: url("img/phone-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -396,7 +396,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("/images/ma/time-header.svg");
+  content: url("img/time-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -449,7 +449,7 @@ ul {
   margin-right: 25px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  content: url("/images/ma/address-header.svg");
+  content: url("img/address-header.svg");
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -530,7 +530,7 @@ ul {
 }
 
 .ma-header__menu_item-sub > a:after {
-  content: url("/images/ma/arrow_down-header.svg");
+  content: url("/img/arrow_down-header.svg");
   width: 10px;
   padding-left: 7px;
 }
@@ -558,7 +558,7 @@ ul {
           box-shadow: 0px 4px 24px rgba(124, 51, 41, 0.15);
   border-radius: 10px;
   background-color: #fff;
-  margin: 1rem 5px !important;
+  margin: 0.75rem 5px !important;
   z-index: 999;
 }
 
@@ -646,6 +646,7 @@ ul {
   cursor: pointer;
   max-height: 70px;
   max-width: 35px;
+  width: 100%;
   stroke: #74BDD4;
   margin: 0 15px;
 }
@@ -832,7 +833,7 @@ ul {
 }
 
 .ma-main-services__items-item h2::after {
-  content: url(/images/ma/services/nav.svg);
+  content: url(/img/services/nav.svg);
   right: 25px;
   text-align: right;
   display: block;
@@ -841,27 +842,27 @@ ul {
 }
 
 .ma-main-services__items-item h2.pregnancy::before {
-  content: url(/images/ma/services/beremennost.svg);
+  content: url(/img/services/beremennost.svg);
 }
 
 .ma-main-services__items-item h2.infertility::before {
-  content: url(/images/ma/services/besplodie_i.svg);
+  content: url(/img/services/besplodie_i.svg);
 }
 
 .ma-main-services__items-item h2.diagnostics::before {
-  content: url(/images/ma/services/diagnostika_i.svg);
+  content: url(/img/services/diagnostika_i.svg);
 }
 
 .ma-main-services__items-item h2.ginekonog::before {
-  content: url(/images/ma/services/ginekologiy_i.svg);
+  content: url(/img/services/ginekologiy_i.svg);
 }
 
 .ma-main-services__items-item h2.skin::before {
-  content: url(/images/ma/services/kozha_i.svg);
+  content: url(/img/services/kozha_i.svg);
 }
 
 .ma-main-services__items-item h2.dietolog::before {
-  content: url(/images/ma/services/uro.svg);
+  content: url(/img/services/uro.svg);
 }
 
 .ma-main-about {
@@ -959,7 +960,7 @@ ul {
 }
 
 .ma-team-slider__item-info p::after {
-  content: url(/images/ma/services/nav.svg);
+  content: url(/img/services/nav.svg);
   width: 100%;
   bottom: 0;
   display: block;
@@ -1049,7 +1050,7 @@ ul {
 }
 
 .ma-footer__content-contacts_phones:before {
-  content: url(/images/ma/footer/phone.svg);
+  content: url(/img/footer/phone.svg);
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -1070,7 +1071,7 @@ ul {
 }
 
 .ma-footer__content-contacts_time:before {
-  content: url(/images/ma/footer/time.svg);
+  content: url(/img/footer/time.svg);
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -1087,7 +1088,7 @@ ul {
 }
 
 .ma-footer__content-contacts_addres:before {
-  content: url(/images/ma/footer/addres.svg);
+  content: url(/img/footer/addres.svg);
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -1103,13 +1104,13 @@ ul {
 }
 
 .ma-footer__content-contacts_socials .icon_ok {
-  background-image: url(/images/ma/footer/ok.svg);
+  background-image: url(/img/footer/ok.svg);
   width: 40px;
 }
 
 .ma-footer__content-contacts_socials .icon_vk {
   width: 40px;
-  background-image: url(/images/ma/footer/vk.svg);
+  background-image: url(/img/footer/vk.svg);
 }
 
 .ma-footer__content-contacts_logo {
@@ -1119,5 +1120,55 @@ ul {
 .ma-footer__copyright p {
   margin: 0;
   text-align: center;
+}
+
+.ma-contacts__map {
+  margin-bottom: -120px;
+  position: relative;
+  min-height: 600px;
+}
+
+.ma-contacts__map_info {
+  position: absolute;
+  z-index: 999;
+  width: 388px;
+  top: 60px;
+  right: 140px;
+  background-color: #fff;
+}
+
+.ma-contacts__map_info dl {
+  padding: 20px 30px;
+}
+
+.ma-contacts__map_info dl a {
+  color: #000;
+}
+
+.ma-contacts__map_info dl dt {
+  font-size: 22px;
+  line-height: 31px;
+  margin-bottom: 3px;
+  margin-top: 20px;
+}
+
+.ma-contacts__map_info dl dd {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.ma-contacts__map_info h1 {
+  background-color: #3AA2C4;
+  color: #fff;
+  font-size: 36px;
+  padding: 15px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.ma-contacts__map_info h1::after {
+  content: url("/img/contacts/arrow_cont.svg");
+  width: 9px;
+  height: 15px;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
