@@ -11,7 +11,15 @@
             top:60px;
             right: 140px;
             background-color: #fff;
-           
+            border-radius: 10px;
+            overflow: hidden;
+            @media (max-width:$tablet) {
+                top:50px;
+                right: 20px;
+                left:20px;
+                width:auto;
+                
+            }
             
             dl{
                 padding:20px 30px;
@@ -35,7 +43,8 @@
                 color:#fff;
                 font-size: 36px;
                 padding: 15px;
-                border-radius: 10px 10px 0px 0px;
+               
+                margin: 0;
                 &::after{
                     content:url('/img/contacts/arrow_cont.svg');
                     width:9px;

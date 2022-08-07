@@ -16,6 +16,29 @@ ul{
     
 }
 
+.btn-reviews{
+    margin-left: 80px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 17px 43px;
+    background: #F27169;
+    border-radius: 90px;
+    @media (max-width:$mob){
+        margin-left: 0px;
+        margin-top: 40px;
+        padding: 10px 110px;
+        background: #3AA2C4;
+
+    }
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.7;
+    }
+
+}
+
 .ma-wrapper{
     max-width:1650px;
     padding: 0px;

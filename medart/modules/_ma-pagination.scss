@@ -1,0 +1,32 @@
+.ma-pagination{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    &__wrapper{
+        display: flex;
+        list-style-type: none;
+        &_item{
+
+            padding: 12px;
+            font-size: 24px;
+            line-height: 34px;
+            &:hover a{
+                    
+                color: #3AA2C4;
+                text-decoration: none;
+            }
+            &:hover svg path{
+                stroke: rgba(242, 113, 105, 1);
+            }
+
+            a{
+                color: #B7D4DD;
+                
+                
+            }
+
+        }
+    }
+}

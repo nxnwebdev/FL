@@ -1,0 +1,34 @@
+.ma-reviews{
+    &__header{
+      
+    
+    }
+
+    &__item{
+        background: #FFFFFF;
+        padding: 20px 30px 35px;
+        box-shadow: 0px 2px 16px rgba(124, 51, 41, 0.15);
+        border-radius: 10px;
+
+        &-title{
+            display: flex;
+            justify-content: space-between;
+            &_name{
+                font-size: 18px;
+                line-height: 26px;
+                color: #3AA2C4;
+            }
+            &_date{
+                font-size: 18px;
+                line-height: 26px;
+                color: #F27169;
+            }
+            &_to{
+                font-size: 16px;
+                line-height: 23px;
+                color: #919191;
+                margin-top: -15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.ma-navigation{
+    background-color: #3AA2C3;
+    color:#fff;
+    padding: 16px;
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width:$desk) {
+            flex-direction: column;
+            align-items: baseline;
+        }
+        &_item{
+            font-size: 18px;
+            a {
+                color:#fff;
+            }
+        }
+    }
+}
