@@ -1,4 +1,5 @@
 .ma-contacts{
+    
     &__map{
         margin-bottom:-120px;
         position: relative;
@@ -43,8 +44,7 @@
                 color:#fff;
                 font-size: 36px;
                 padding: 15px;
-               
-                margin: 0;
+                margin: 0!important;
                 &::after{
                     content:url('/img/contacts/arrow_cont.svg');
                     width:9px;

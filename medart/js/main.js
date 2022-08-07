@@ -19,6 +19,43 @@ $(document).ready(function(){
             return '<a href="#"><span></span></a>';
         },
     });
+    $('.ma-doctor__sert .row').slick({
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      appendArrows:'.ma-doctor__sert_navs',
+      prevArrow:'<svg class="ma-team-slider_btn" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M102 11C45.8462 11 11.9359 11 2 11M2 11L14.5 21M2 11L14.5 1"  stroke-width="2"/></svg>',
+      nextArrow:'<svg class="ma-team-slider_btn" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 11C56.1538 11 90.0641 11 100 11M100 11L87.5 21M100 11L87.5 1"  stroke-width="2"/></svg>',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+           
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+           
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+           
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+    });
     $('.ma-team-slider').slick({
         
         infinite: true,
