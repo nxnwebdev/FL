@@ -2,7 +2,8 @@
     background-color: #3AA2C3;
     color:#fff;
     padding: 16px;
-
+    border-top: 1px solid rgba(103, 193, 221, 1);
+    border-bottom: 1px solid rgba(103, 193, 221, 1);
     &__list{
         list-style-type: none;
         display: flex;
