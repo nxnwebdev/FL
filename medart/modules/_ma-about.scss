@@ -1,16 +1,20 @@
 .ma-about{
     margin-top: 80px;
-    padding:0 0 100px;
-    background: url(/img/bg/bg_part_up.png) top right no-repeat,
-    url(/img/bg/bg_part_down.png) 0% 100% no-repeat;
-    @media (max-width:$tablet) {
-        background: #fff;
-    }
-    .row div{
-        margin-top: 60px;
-        &:first-child{
-            margin-top: 0px;
+
+    &__content{
+        padding:0 0 100px;
+        background: url(/img/bg/bg_part_up.png) top right no-repeat,
+        url(/img/bg/bg_part_down.png) 0% 100% no-repeat;
+        @media (max-width:$tablet) {
+            background: #fff;
         }
+        div{
+            margin-top: 60px;
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+        
     }
     &__services{
         background-image: url(/img/bg/bg_about.png);
@@ -21,6 +25,11 @@
             line-height: 34px;
             color: #FFFFFF;
             padding: 32px 0 40px;
+        }
+        .row {
+            div{
+                
+            }
         }
         &-item{
             background-color: #fff;
