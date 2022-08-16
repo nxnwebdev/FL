@@ -14,6 +14,11 @@
         font-size: 42px;
         line-height: 60px;
         color: #2D1C1A;
+        @media (max-width:$col-xl) {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 40px;
+        }
     }
     h2{
         margin-top: 35px;
@@ -21,6 +26,11 @@
         font-size: 36px;
         line-height: 51px;
         color: #F27169;
+        @media (max-width:$col-xl) {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 40px;
+        }
     }
     h3{
         font-weight: 600;
@@ -80,10 +90,20 @@
                 h2{
                     color: #fff;
                     margin-top: 75px;
+                    @media (max-width:$col-xl) {
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 h3{
                     color: #fff;
                     margin-top: 30px;
+                    @media (max-width:$col-xl) {
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 p{
                     color: #fff;
@@ -176,28 +196,14 @@
             h2{
                 
                 color: #fff;
-
-            }
-            ul{
-                list-style-position: inside;
-                list-style-type: none;
-                margin-top: 60px;
-                color:#fff;
-                li{
-                    margin-top: 30px;
-                    &::before{
-                        content:'';
-                        width: 6px;
-                        height: 6px;
-                        background-color: #F27169;
-                        border-radius: 2px;
-                        display: inline-block;
-                        margin-right: 8px;
-                        margin-bottom: 3px;
-
-                    }
+                @media (max-width:$col-xl) {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 40px;
                 }
+
             }
+            
             button{
                 padding: 17px 41px;
                 background: #FFFFFF;
@@ -218,6 +224,11 @@
             font-size: 42px;
             line-height: 60px;
             margin-top: 60px;
+            @media (max-width:$col-xl) {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 40px;
+            }
         }
     }
 

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="ma-header"> 
+  <div class="ma-wrapper">
+    <div class="container-fluid"> 
+        <div class="row position-relative">
+            <div class="ma-header_col-logo col-4 col-md-3 col-lg ">
+                <div class="ma-header_col-logo">
+                    <a href="/">
+                        <img src="img/logo.svg" alt="meadrt">
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="ma-header_col-phones col ">
+                
+                <div class="ma-header-phones">
+                    <ul class=""><li class="ma-header-phones_item">
+                        <a href="tel:78126407717">+7 812 640-77-17</a></li>
+                        <li class="ma-header-phones_item"><a href="tel:79313655888">+7 931 365-58-88</a></li></ul>
+                </div>
+                
+                
+            </div>
+            <div class="ma-header_col-address col col-xl-3 ">
+                <div class="ma-header-address">
+                    Санкт-Петербург, Приморский район,<br> ул. Шаврова 13/1
+                </div>
+            </div>
+            <div class="ma-header_col-time col ">
+                <div class="ma-header-time">
+                    <div class="ma-header-time-items">
+                        <ul>
+                            <li>Будни</li>
+                            <li class="ma-header-time-items_hours">10:00 - 21:00</li>
+                        </ul>
+                        <ul>
+                            <li>Суббота</li>
+                            <li class="ma-header-time-items_hours">10:00 - 18:00</li>
+                        </ul>
+                    </div>
+                    
+                       
+                </div>
+            </div>
+            <div class="ma-header_col-order col ">
+                <button class="btn ma-header-btn">Записаться <span class="d-none d-xl-inline">на прием</span></button>
+                
+            </div>
+            
+            <span class="ma-burger"></span>
+            
+
+            <div class="w-100 my-3 "></div>
+            
+            <div class="ma-header_col-menu col-12 col-lg-8 col-xl-7 ">
+                
+                <ul class="ma-header__menu">
+                    <li class="ma-header__menu_item"><a href="#">Новости</a></li>
+                    <li class="ma-header__menu_item"><a href="#">Наши врачи</a></li>
+                    <li class="ma-header__menu_item ma-header__menu_item-sub"><a href="#">О клинике</a>
+                        <ul class="ma-header__menu-sub">
+                            <li class="ma-header__menu-sub_item"><a href="#">Правовая информация</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Новости</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Контакты</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="ma-header__menu_item"><a href="#">Контакты</a></li>
+                    <li class="ma-header__menu_item"><a href="#">Отзывы</a></li>
+                    <li class="ma-header__menu_item"><a href="#">Акции</a></li>
+                    <li class="ma-header__menu_item"><a href="#">Статьи</a></li>
+                    <li class="ma-header__menu_item ma-header__menu_item-sub"><a href="#">Направления</a>
+                        <ul class="ma-header__menu-sub">
+                            <li class="ma-header__menu-sub_item"><a href="#">Ведение беременности</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Лечение бесплодия</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Отделение диагностики</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Гинекологи эндокринология</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Лечение кожи и волос</a></li>
+                            <li class="ma-header__menu-sub_item"><a href="#">Диетология-Нутрициология</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ma-header_col-socials col ">
+                <div class="ma-header__socials">
+                    <a href="" class="icon icon_ok"></a>
+                    <a href="" class="icon icon_vk"></a>
+                </div>
+            </div>
+            <div class="ma-header_col-search col">
+                <form class="ma-header__search">
+                    <input type="text"  placeholder="Поиск" class="ma-header__search_input" />
+                    <input type="submit" class="ma-header__search_btn" value=""/>
+                  </form>
+            </div>
+            
+        </div>
+
+    </div>
+    </div>
+</div>
+<div class="ma-navigation">
+    <div class="ma-wrapper">
+        <div class="container-fluid">
+            <ul class="ma-navigation__list">
+                <li class="ma-navigation__list_item"><a href="#" >Гинекология</a></li>
+                <li class="ma-navigation__list_item"><a href="#" >Подготовка к анализам</a></li>
+                <li class="ma-navigation__list_item"><a href="#" >Методика</a></li>
+                <li class="ma-navigation__list_item"><a href="#" >Микротоковая терапия</a></li>
+                <li class="ma-navigation__list_item"><a href="#" >Молодость за 1 час. Рекомендации косметологов «МЕД-АРТ».</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="ma-promo">
+    <div class="ma-wrapper">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-5 offset-xl-2 col-12 col-sm-6">
+                    <h1 class="ma-promo__title">О клинике</h1>
+                    <p class="ma-promo__desc">Многопрофильная медицинская клиника "Мед-Арт" объединяет опытных врачей-единомышленников, уверенных в том, что работать нужно с человеком, а не с его недугом. Главное для нас – индивидуальный подход и нахождение оптимального пути решения проблемы каждого конкретного пациента.</p>
+                    <p class="ma-promo__desc">Наши специалисты помогают успешно решать различные проблемы со здоровьем, будь то вопросы репродуктологии и планирования семьи, гинекологии, дерматологии, неврологии. Клиника оснащена всем необходимым современным оборудованием, позволяющим проводить точную диагностику и эффективное лечение.</p>
+                </div>
+                <div class="col-xl-4 offset-xl-1 col-12 col-sm-6">
+                    <div class="ma-promo__callback-form">
+                        <h2>Обратный звонок</h2>
+                        <form action="">
+                            <input class="form-control" type="text" placeholder="Ваше имя" required>
+                            <input class="form-control" type="tel" placeholder="Номер телефона" required>
+                            <button class="btn" type="submit">Отправить</button>
+                        </form>
+                        
+                    </div>
+                </div>
+</div></div></div></div>
+
+
+<div class="ma-content ma-services">
+    <div class="ma-wrapper">
+      <div class="container-fluid">
+          <h2>В нашей клинике ведут прием</h2>
+          <div class="row ma-services__list">
+              <div class="col-12 col-md-4">
+                  <div class="ma-services__list-item">
+                      <h3>гинеколог-репродуктолог</h3>
+                      <p>Врач-репродуктолог центра может провести полноценное обследование, выявить причину неудач с зачатием, назначить полноценное лечение и контролировать его эффективность.</p> 
+                          <p>В большинстве случаев лечение, хоть и длительное, позволяет женщине забеременеть и сохранить беременность.</p> 
+                          <p>Если выявленную проблему не удается устранить при помощи консервативных методов лечения и операции, на помощь женщине могут прийти вспомогательные технологии.</p> 
+                          <p>Специалисты клиники в совершенстве овладели всеми тонкостями проведения процедур ЭКО и ИКСИ. Проводится здесь также инсеминация спермой мужа или донора.</p>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4">
+                  <div class="ma-services__list-item">
+                      <h3>гинеколог-онколог</h3>
+                      <p class="">Гинеколог-онколог занимается диагностикой и лечением целого перечня гинекологических заболеваний, начиная от эрозии шейки матки до запущенных случаев рака.</p> 
+                          <p>Да, принято считать, что эрозия шейки матки является несложным и распространенным заболеванием, однако она требует постоянного наблюдения и принятия своевременных мер при появлении изменений.</p>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4">
+                  <div class="ma-services__list-item">
+                      <h3>гинеколог-эндокринолог</h3>
+                      <p class="">Гинекологическая эндокринология занимается такими проблемами как эндокринное бесплодие, при котором дисбаланс гормонов приводит к нарушению процесса созревания пригодной для оплодотворения яйцеклетки, нарушения менструального цикла,   патологическое ожирение.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="ma-services__disease">
+      <div class="ma-wrapper">
+          <div class="container-fluid">
+              <div class="row ma-services__disease-list">
+                  <div class="d-none d-xl-block col-md-5">
+                      <img class="img-fluide" src="/img/service/service_disease.png" alt="">
+                  </div>
+                  <div class="col-12 col-md-7">
+                      <h2>К числу самых частых причин обращения в нашу клинику относятся</h2>
+                      <ul class="ma-lists offset-md-1">
+                          <li class="ma-lists__item ma-lists__item_red">невозможность забеременеть</li>
+                          <li class="ma-lists__item ma-lists__item_red">боли и прочие неприятные симптомы в нижних отделах живота и малом тазу</li>
+                          <li class="ma-lists__item ma-lists__item_red">нарушения менструального цикла</li>
+                          <li class="ma-lists__item ma-lists__item_red">лечение ИППП и ЗППП</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="ma-service__team">
+      <div class="ma-wrapper">
+          <div class="container-fluid">
+              <h3 class="ma-service__team-title">Наши специалисты</h3>
+              <div class="ma-team-slider_navs"></div>
+              <div class="ma-team-slider row">
+                 <div class="col-12 col-md-3">
+                      <div class="ma-team-slider__item">
+                          <a href="#">
+                              <img src="/img/team/1.png" alt="Денисенко Татьяна Валентиновна" class="img-fluid">
+                              <div class="ma-team-slider__item-info">
+                                  <h5>Денисенко Татьяна Валентиновна</h5>
+                              <p>Руководитель клинкики “Мед-Арт”, акушер-гинеколог, репродуктор. Врач высшей категории.</p>
+                              </div>
+                              
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                      <div class="ma-team-slider__item">
+                          <a href="#">
+                              <img src="/img/team/2.png" alt="Полянская Ирина ИвановнаПолянская Ирина Ивановна" class="img-fluid">
+                              <div class="ma-team-slider__item-info">
+                                  <h5>Полянская Ирина Ивановна</h5>
+                                  <p>Врач ультразвуковой диагностики. Врач высшей категории.</p>
+                              </div>
+                             
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                      <div class="ma-team-slider__item">
+                          <a href="#">
+                              <img src="/img/team/3.png" alt="Казанцева Наталья Геннадьевна" class="img-fluid">
+                              <div class="ma-team-slider__item-info">
+                                  <h5>Казанцева Наталья Геннадьевна</h5>
+                              <p>Врач ультразвуковой диагностики. Врач высшей категории.</p>
+                              </div>
+                              
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                      <div class="ma-team-slider__item">
+                          <a href="#">
+                              <img src="/img/team/4.png" alt="Кубрин Семен Викторович" class="img-fluid">
+                              <div class="ma-team-slider__item-info">
+                                  <h5>Кубрин Семен Викторович</h5>
+                                  <p>Врач дерматовенеролог, дерматоонколог, Врач высшей категории.</p>
+                              </div>
+                           
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                      <div class="ma-team-slider__item">
+                          <a href="#">
+                              <img src="/img/team/1.png" alt="Денисенко Татьяна Валентиновна" class="img-fluid">
+                              <div class="ma-team-slider__item-info">
+                                  <h5>Денисенко Татьяна Валентиновна</h5>
+                              <p>Руководитель клинкики “Мед-Арт”, акушер-гинеколог, репродуктор. Врач высшей категории.</p>
+                              </div>
+                              
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="ma-prices ma-service__prices">
+      <div class="ma-wrapper">
+          <div class="container-fluid">
+              <h2>Цены на услуги</h2>
+              <div class="row">
+                  <div class="col-12">
+                      <div class="ma-prices__service-item">
+                          <h5 data-toggle="collapse" role="button" data-target="#ma-prices__service-item_1" aria-expanded="true" aria-controls="ma-prices__service-item_1">Первый триместр</h5>
+                          <div class="table-responsive collapse multi-collapse show" id="ma-prices__service-item_1">
+                              <table class="table">
+                              
+                                  <tbody>
+                                      <tr>
+                                          <th scope="col">НАИМЕНОВАНИЕ</th>
+                                          <th scope="col">кол-во</th>
+                                          <th scope="col">цена</th>
+                                      </tr>
+                                  <tr>
+                                  <td>Мочевина</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий билирубин</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Креатинин</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>АСТ</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>АЛТ</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий белок</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Глюкоза</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Микробиоценоз жен</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Клинический анализ крови+лейкоформула+СОЭ</td>
+                                  <td>3</td>
+                                  <td>1800.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий анализ мочи ( 4 позиции)</td>
+                                  <td>4 позиции</td>
+                                  <td>1400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>а/т к ВИЧ 1,2типа</td>
+                                  <td>1</td>
+                                  <td>450.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>RW Сифилис RPR(антикардиолипиновый тест)</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Гепатит В австралийский антиген (HBsAg)</td>
+                                  <td>1</td>
+                                  <td>450.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>ГепатитС (HCV)а/т суммарные IgM,G госпит.</td>
+                                  <td>1</td>
+                                  <td>500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Межскрининговое иследование</td>
+                                  <td>1</td>
+                                  <td>1500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор крови из вены ( 3 позиции)</td>
+                                  <td>3 позиции</td>
+                                  <td>600.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор мазка</td>
+                                  <td>1</td>
+                                  <td>200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Консультация по БЕРЕМЕННОСТИ ( 5 посещений)</td>
+                                  <td>5 посещений</td>
+                                  <td>4250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Лечебно-консультативный прием терапевта-кардиолога</td>
+                                  <td>1</td>
+                                  <td>1000.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Узи беременных с 32нед. по 35нед. III скрин.</td>
+                                  <td>1</td>
+                                  <td>3200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2">Итого:</td>
+                                  <td>17900</td>
+                                  </tr>
+                                  </tbody>
+                                  </table>
+                          </div>
+                          
+                      </div>
+                      <div class="ma-prices__service-item">
+                          <h5 data-toggle="collapse" role="button" data-target="#ma-prices__service-item_2" aria-expanded="true" aria-controls="ma-prices__service-item_2">Второй триместр</h5>
+                          <div class="table-responsive collapse multi-collapse show" id="ma-prices__service-item_2">
+                              <table class="table">
+                                  <tbody>
+                                  <tr>
+                                  <th scope="col">НАИМЕНОВАНИЕ</th>
+                                  <th scope="col">Кол-во</th>
+                                  <th scope="col">Цена</th>
+                                  </tr>
+                                  <tr>
+                                  <td>Исслед отд из зева на флору и чувств к а/б</td>
+                                  <td>1</td>
+                                  <td>1100.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Исслед отд из носа на флору и чувств к а/б</td>
+                                  <td>1</td>
+                                  <td>1100.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Биохим. скрининг II триместра берем.-"тройной тест" (ХГЧобщ.+,АФП,+эстрадиол св.)</td>
+                                  <td>1</td>
+                                  <td>2500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Д-димер</td>
+                                  <td>1</td>
+                                  <td>1100.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий анализ мочи ( 4 позиции)</td>
+                                  <td>4 позиции</td>
+                                  <td>1400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>RW Сифилис RPR(антикардиолипиновый тест)</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Гепатит В австралийский антиген (HBsAg)</td>
+                                  <td>1</td>
+                                  <td>450.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>ГепатитС (HCV)а/т суммарные IgM,G госпит.</td>
+                                  <td>1</td>
+                                  <td>500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Микробиоценоз жен</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Межскрининговое иследование</td>
+                                  <td>1</td>
+                                  <td>1500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор мазка</td>
+                                  <td>1</td>
+                                  <td>200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор крови из вены ( 2 позиции)</td>
+                                  <td>2 позиции</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Консультация по БЕРЕМЕННОСТИ ( 5 посещений)</td>
+                                  <td>5 посещений</td>
+                                  <td>4250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>ЭКГ с расшифровкой</td>
+                                  <td>1</td>
+                                  <td>600.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Лечебно-консультативный прием терапевта-кардиолога</td>
+                                  <td>1</td>
+                                  <td>1000.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Узи беременных 20-22 нед. II скрин.</td>
+                                  <td>1</td>
+                                  <td>3200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2">ИТОГО</td>
+                                  <td>21100</td>
+                                  </tr>
+                                  </tbody>
+                                  </table>
+                          </div>
+                      </div>
+                      <div class="ma-prices__service-item">
+                          <h5 data-toggle="collapse" role="button" data-target="#ma-prices__service-item_3" aria-expanded="true" aria-controls="ma-prices__service-item_3">Третий триместр</h5>
+                          <div class="table-responsive collapse multi-collapse show" id="ma-prices__service-item_3">
+                              <table class="table">
+                                  <tbody>
+                                  <tr>
+                                  <th scope="col">НАИМЕНОВАНИЕ</th>
+                                  <th scope="col">кол-во</th>
+                                  <th scope="col">цена</th>
+                                  </tr>
+                                  <tr>
+                                  <td>Мочевина</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий билирубин</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Креатинин</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>АСТ</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>АЛТ</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий белок</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Глюкоза</td>
+                                  <td>1</td>
+                                  <td>250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Микробиоценоз жен</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Клинический анализ крови+лейкоформула+СОЭ</td>
+                                  <td>3</td>
+                                  <td>1800.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Общий анализ мочи ( 4 позиции)</td>
+                                  <td>4 позиции</td>
+                                  <td>1400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>а/т к ВИЧ 1,2типа</td>
+                                  <td>1</td>
+                                  <td>450.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>RW Сифилис RPR(антикардиолипиновый тест)</td>
+                                  <td>1</td>
+                                  <td>400.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Гепатит В австралийский антиген (HBsAg)</td>
+                                  <td>1</td>
+                                  <td>450.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>ГепатитС (HCV)а/т суммарные IgM,G госпит.</td>
+                                  <td>1</td>
+                                  <td>500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Межскрининговое иследование</td>
+                                  <td>1</td>
+                                  <td>1500.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор крови из вены ( 3 позиции)</td>
+                                  <td>3 позиции</td>
+                                  <td>600.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Забор мазка</td>
+                                  <td>1</td>
+                                  <td>200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Консультация по БЕРЕМЕННОСТИ ( 5 посещений)</td>
+                                  <td>5 посещений</td>
+                                  <td>4250.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Лечебно-консультативный прием терапевта-кардиолога</td>
+                                  <td>1</td>
+                                  <td>1000.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td>Узи беременных с 32нед. по 35нед. III скрин.</td>
+                                  <td>1</td>
+                                  <td>3200.00</td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2">Итого:</td>
+                                  <td>17900</td>
+                                  </tr>
+                                  </tbody>
+                                  </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="ma-diagnostic ma-service__diagnostic">
+  <div class="ma-wrapper">
+      <div class="container-fluid">
+          <h2>Диагностика и лечение заболеваний</h2>
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-9">
+                  <div class="ma-diagnostic__list-wrapper">
+                      <div class="ma-diagnostic__list-wrapper-item">
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>A</b>
+                          <ul>
+                              <li><a href="#">Актуальные принципы при подготовке к беременности</a></li>
+                              <li><a href="#">Анемия у беременных</a></li>
+                              <li><a href="#">Варикозное расширения вен у беременных</a></li>
+                          </ul>
+                          </div>
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>B</b>
+                          <ul>
+                              <li><a href="#">Варикозное расширения вен у беременных</a></li>
+                          </ul>
+                          </div>
+                          
+                      </div>
+                      <div class="ma-diagnostic__list-wrapper-item">
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>Г</b>
+                          <ul>
+                              <li><a href="#">Генетические исследования беременных</a></li>
+                              <li><a href="#">Гестозы беременных</a></li>
+                             
+                          </ul>
+                          </div>
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>З</b>
+                          <ul>
+                              <li><a href="#">Заболевания почек и беременность</a></li>
+                              <li><a href="#">Заболевания щитовидной железы и беременность</a></li>
+                             
+                          </ul>
+                          </div>
+                          
+                      </div>
+                      <div class="ma-diagnostic__list-wrapper-item">
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>Н</b>
+                          <ul>
+                              <li><a href="#">Невынашивание беременности</a></li>
+                              
+                          </ul>
+                          </div>
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>П</b>
+                          <ul>
+                              <li><a href="#">Пренатальный cкрининг беременных: УЗИ скрининг в режиме 3D-4D и биохимический скрининг</a></li>
+                              
+                          </ul>
+                          </div>
+                          <div class="ma-diagnostic__list-wrapper-item-word">
+                              <b>С</b>
+                          <ul>
+                              <li><a href="#">Сахарный диабет беременных (Гестационный сахарный диабет)</a></li>
+                              
+                          </ul>
+                          </div>
+                          
+                      </div>
+                      
+                     
+                     
+  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  </div>
+
+<div class="ma-footer">
+    <div class="ma-wrapper">
+        <div class="container-fluid">
+            <div class="ma-footer__content row">
+                <div class="col-12 col-md-3">
+                    <p class="ma-footer__content-title">Акции</p>
+                    <ul class="ma-footer__content-links">
+                        <li><a href="#">Дисконтная карта “Мед-Арт”</a></li>
+                        <li><a href="#">Кончультация венеролога высшей категории + Обследования на половые инфекции = 2475</a></li>
+                        <li><a href="#">Здоровые и красывые волосы 2022</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p class="ma-footer__content-title">Новости</p>
+                    <ul class="ma-footer__content-links">
+                        <li><a href="#">Теперь вы можете записаться к нам онлайн!</a></li>
+                        <li><a href="#">На официальном сайте нашей клинике появился раздел “Отзывы”</a></li>
+                        <li><a href="#">Новое направление диетология-нутрициология</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p class="ma-footer__content-title">Лечение заболевания</p>
+                    <ul class="ma-footer__content-links ma-footer__content-links_service">
+                        <li><a href="#">Гинекологические заболевания</a></li>
+                        <li><a href="#">Дерматологические заболевания</a></li>
+                        <li><a href="#">Урологические заболевания</a></li>
+                        <li><a href="#">Косметологические процедуры</a></li>
+                        <li><a href="#">Заболевания волос</a></li>
+                        <li><a href="#">Остальные заболевания</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 order-first order-md-last">
+                   
+                  <div class="ma-footer__content-contacts">
+                    <a href="#" class="ma-footer__content-contacts_logo"><img src="/img/footer/logo.svg" class="ma-footer__content-logo" alt="medart clinic"></a>
+                    <div class="ma-footer__content-contacts_phones">
+                        <ul class="">
+                            <li><a href="tel:78126407717">+7 812 640-77-17</a></li>
+                            <li><a href="tel:79313655888">+7 931 365-58-88</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="ma-footer__content-contacts_time">
+                        <ul class="">
+                            <li>Будни:<span>10:00 - 21:00</span></li>
+                            <li>Суббота:&nbsp;&nbsp;<span>10:00 - 18:00</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ma-footer__content-contacts_addres">
+                        <ul class="">
+                            <li>Санкт-Петербург, Приморский район, ул. Шаврова 13/1</li>
+                        </ul>
+                    </div>
+                   
+                
+                        <ul class=" ma-footer__content-contacts_socials">
+                            <li><a class="icon icon_ok" href="#"></a></li>
+                            <li><a class="icon icon_vk" href="#"></a></li>
+                        </ul>
+                
+                   
+                   
+                </div>
+                        
+                </div>
+            </div>
+            <div class="ma-footer__copyright">
+                <p>© 2012 - 2022. Все права соблюдены. Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и не является публичной офертой.</p>
+            </div>
+        </div>
+    </div>
+</div>
+       
+   
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/main.js"></script>  
+</body>
+</html>
